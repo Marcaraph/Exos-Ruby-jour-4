@@ -7,7 +7,7 @@ end
 
 def short(journalists)
     puts "Quel est le handle le plus court de cette liste ?"
-    shortest_handle = journalists.min_by { |handle| handle.length }
+    shortest_handle = journalists.min_by { |handle| handle.length }                                 # Dans l'array journalists, je recherche le |handle| le plus petit dans la liste complète des handles classée par taille. shortest_handle = journalists.min_by { |word| word.length}
     # shortest_handle = journalists.min {|a, b| a.size <=> b.size }
     puts "> #{shortest_handle} est le handle le plus court de cette liste."
     shortest_handle
